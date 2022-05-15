@@ -2,12 +2,14 @@
   "name": "react-photo-gallery",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://rahul8757.github.io/prity/",
   "keywords": [
     "react",
     "image- gallery"
   ],
   "main": "src/index.js",
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "react": "16.4.2",
     "react-dom": "16.4.2",
     "react-image-gallery": "0.8.10",
@@ -16,11 +18,12 @@
     "react-photo-gallery": "6.2.0",
     "react-scripts": "1.1.4"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
